@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptatorian</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/Frame6.png" alt="icone-alura">
+    </header>
+    <main>
+        <section class="criptografar">
+            <textarea class="criptografar__area" cols="41" rows="4" id="entrada_criptografar" placeholder="Digite seu texto"></textarea> 
+            <div class="criptografar__regras">
+                <img src="./assets/Group.png" alt="exclamacao">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="criptografar__botoes">
+                <button class="criptografar__botoes__criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="criptografar__botoes__descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="traduzir">
+            <div id="mensagemVazia">
+                <img src="./assets/HighQualityProducts.png" alt="Menino da lupa">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptogtafar ou descriptografar</p>
+            </div>
+            <div id="traducao" style="display: none">
+                <div class="traduzir__texto"></div>
+                <button class="traduzir__copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape"> Desenvolvido por Nuveminha <a href="https://github.com/nuveminha"></a></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
